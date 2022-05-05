@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+h1 {
+  @apply text-3xl;
+}
+
+h2 {
+  @apply text-2xl;
+}
+
+h3 {
+  @apply text-xl;
+}
+
+h4 {
+  @apply text-lg;
+}
+
+a {
+  @apply text-blue-600;
+}
+
+section {
+  @apply mb-5;
+}
+
+nav a {
+  @apply text-gray-400 m-2;
+}
+
+ul {
+  @apply list-disc list-inside;
+}
+
+ol {
+  @apply list-decimal list-inside;
+}
+
+li p {
+  display: inline;
+}
+
+
+@media print {
+  .noPrint {
+    display: none;
+  }
+}

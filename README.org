@@ -1,0 +1,3 @@
+* Used links:
++ https://www.unsungnovelty.org/posts/03/2022/how-to-add-tailwind-css-3-to-a-hugo-website-in-2022/
++ https://draft.dev/learn/creating-hugo-themes
