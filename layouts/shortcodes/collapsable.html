@@ -1,0 +1,12 @@
+<div class="collapsable noPrint" x-data="{ isOpen: false }">
+  <button
+      class="btn-primary"
+      x-on:click="isOpen = !isOpen"
+  >
+    Open/Hide
+  </button>
+
+  <div x-show="isOpen" style="display: none">
+    {{ .Inner }}
+  </div>
+</div>
