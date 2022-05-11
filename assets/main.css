@@ -59,6 +59,11 @@ li p {
   display: inline;
 }
 
+li ul li {
+  list-style: circle;
+  @apply ml-10;
+}
+
 @media print {
   .noPrint {
     display: none;

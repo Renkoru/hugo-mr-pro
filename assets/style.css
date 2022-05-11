@@ -621,6 +621,11 @@ li p {
   display: inline;
 }
 
+li ul li {
+  list-style: circle;
+  margin-left: 2.5rem;
+}
+
 @media print {
   .noPrint {
     display: none;
