@@ -1,0 +1,22 @@
+<ul>
+  {{ .Inner | replaceRE "<li>" `
+  <li
+      class="relative pr-4"
+      x-data="{
+             hStyle: 'normal',
+             d: {
+                normal: 'text-current',
+                gray: 'text-gray-200',
+                bold: 'font-bold',
+             }}"
+      :class="d[hStyle]"
+  >
+    <span
+        class="noPrint absolute right-0 bottom-0 bg-white question-hilight"
+    >
+      <span @click="hStyle = 'gray'">H</span>
+      <span @click="hStyle = 'normal'">N</span>
+      <span @click="hStyle = 'bold'">B</span>
+    </span>
+  ` | safeHTML }}
+</ul>

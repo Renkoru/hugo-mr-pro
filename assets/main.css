@@ -81,3 +81,21 @@ li ul li {
 .boxed-list li {
   @apply list-none p-5 border-solid border-2;
 }
+
+.question-hilight span {
+  display: none;
+  @apply cursor-pointer text-gray-600;
+}
+
+.question-hilight:hover span {
+  display: initial;
+}
+
+.question-hilight:hover {
+  @apply border-solid border-2 w-max;
+}
+
+.question-hilight:after {
+  @apply text-gray-200;
+  content: "\2600"
+}
