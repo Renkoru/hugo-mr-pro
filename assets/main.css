@@ -74,6 +74,13 @@ li ul li {
   }
 }
 
+@page {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: -30px;
+  margin-right: 0px;
+}
+
 .collapsable {
   @apply border-solid border-2;
 }
@@ -102,4 +109,80 @@ li ul li {
 .question-hilight:after {
   @apply text-gray-200;
   content: "\2600"
+}
+
+.cv-page {
+  @apply flex gap-8;
+}
+
+.cv-tech-list-icons {
+  @apply flex flex-col gap-y-4;
+  border-left: 1px solid #d8d8d8;
+  padding-left: 7px;
+}
+.cv-tech-list-icons div {
+  @apply w-5;
+}
+
+.cv-page li {
+  list-style-image: url('/icons/caret-right-solid.svg');
+  @apply text-2xl/4;
+}
+
+.cv-page li span {
+  padding-left: 5px;
+  @apply text-base;
+}
+
+.cv-avatar {
+  @apply h-64 mx-auto rounded-full p-2 border border-black border-dashed;
+}
+
+.cv-icons {
+  @apply flex gap-4 justify-center;
+}
+
+.cv-icons a {
+  @apply h-5 w-5;
+}
+
+.cv-left {
+  @apply basis-72 shrink-0;
+  background-color: #fafafa;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.cv-left :is(h1, h2, h3, h4, h5, h6) {
+  background: linear-gradient(0.25turn, #eeeeee, #fafafa);
+  padding-left: 5px;
+
+  margin-right: 0.5rem;
+  padding-bottom: 0;
+  margin-bottom: 0.2rem;
+}
+.cv-center :is(h3, h4, h5, h6) {
+  background: linear-gradient(0.25turn, #f0f0f0, #ffffff);
+
+  padding-left: 5px;
+  margin-right: 0.5rem;
+  padding-bottom: 0;
+  margin-bottom: 0.2rem;
+}
+
+.cv-center {
+  @apply grow;
+  padding-top: 20px;
+}
+
+.cv-right {
+  @apply grow-0;
+  padding-top: 20px;
+}
+
+.cv-experience-block {
+  margin-top: 5px;
+}
+
+.cv-experience-title {
+  margin-right: 10px;
 }
