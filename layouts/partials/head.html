@@ -14,7 +14,7 @@
     <title>{{ $title }}</title>
 
     {{ if .IsTranslated }}
-    <nav class="LangNav">
+    <nav class="LangNav noPrint">
       {{ range .Translations }}
       <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
       {{ end}}

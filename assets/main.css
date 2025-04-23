@@ -138,12 +138,17 @@ li ul li {
   @apply h-64 mx-auto rounded-full p-2 border border-black border-dashed;
 }
 
-.cv-icons {
-  @apply flex gap-4 justify-center;
+
+.cv-icons li {
+  list-style: none;
 }
 
 .cv-icons a {
-  @apply h-5 w-5;
+  @apply flex gap-3 text-base items-center;
+}
+
+.cv-icons img {
+  @apply h-4 w-4;
 }
 
 .cv-left {
@@ -163,7 +168,6 @@ li ul li {
 .cv-center :is(h3, h4, h5, h6) {
   background: linear-gradient(0.25turn, #f0f0f0, #ffffff);
 
-  padding-left: 5px;
   margin-right: 0.5rem;
   padding-bottom: 0;
   margin-bottom: 0.2rem;
